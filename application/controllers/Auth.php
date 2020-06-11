@@ -57,14 +57,14 @@ class Auth extends CI_Controller
 						// update shipping address table to complete data
 						$this->db->set('user_id', $user['id']);
 						$this->db->where('user_email', $user['email']);
-						$this->db->update('shipping_address',);
+						$this->db->update('shipping_address');
 						// redirect user to admin/index
 						redirect('administrator');
 					}else{
 						// update shipping address table to complete data
 						$this->db->set('user_id', $user['id']);
 						$this->db->where('user_email', $user['name']);
-						$this->db->update('shipping_address',);
+						$this->db->update('shipping_address');
 						// redirect user to home/index
 						redirect('home');
 					}
